@@ -1,6 +1,6 @@
 {
     "version"           : "1.0.0",
-    "name"              : "CeresDefault",
+    "name"              : "DanTheme",
     "description"       : "Das ist ein Default Theme für Ceres",
     "author"            : "Frontend Studios GmbH",
     "license"           : "AGPL-3.0",
@@ -14,14 +14,14 @@
     "keywords"          : ["plentymarkets", "plugins", "layout", "theme", "ceres", "frontend studios"],
     "type"              : "theme",
     "require"           : ["Ceres", "IO"],
-    "namespace"         : "CeresDefault",
-    "serviceProvider"   : "CeresDefault\\Providers\\CeresDefaultServiceProvider",
+    "namespace"         : "DanTheme",
+    "serviceProvider"   : "DanTheme\\Providers\\DanThemeServiceProvider",
     "dataProviders"     :
     [
       {
-        "key":"CeresDefault\\Containers\\CeresDefault",
-        "name":"CeresDefault",
-        "description":"Default Theme für Ceres"
+        "key":"DanTheme\\Containers\\DanTheme",
+        "name":"DanTheme",
+        "description":"Dans Theme für Ceres"
       }
     ]
 }

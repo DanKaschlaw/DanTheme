@@ -1,6 +1,6 @@
 <?php
 
-namespace CeresDefault\Providers;
+namespace DanTheme\Providers;
 
 use IO\Extensions\Functions\Partial;
 use IO\Helper\CategoryKey;
@@ -13,7 +13,7 @@ use Plenty\Plugin\ConfigRepository;
 use IO\Helper\ComponentContainer;
 
 
-class CeresDefaultServiceProvider extends ServiceProvider
+class DanThemeServiceProvider extends ServiceProvider
 {
     const EVENT_LISTENER_PRIORITY = 99;
     /**
@@ -29,7 +29,7 @@ class CeresDefaultServiceProvider extends ServiceProvider
 
         // provide template to use for homepage
         $eventDispatcher->listen('IO.tpl.home', function(TemplateContainer $container, $templateData) {
-            $container->setTemplate("CeresDefault::Homepage.Homepage");
+            $container->setTemplate("DanTheme::Homepage.Homepage");
             return false;
         });
     }
