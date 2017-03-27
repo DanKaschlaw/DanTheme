@@ -32,5 +32,11 @@ class DanThemeServiceProvider extends ServiceProvider
             $container->setTemplate("DanTheme::Homepage.Homepage");
             return false;
         });
+
+            // provide template to use for homepage
+        $eventDispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container, $templateData) {
+            $container->setTemplate("DanTheme::Category.Item.CategoryItem");
+            return false;
+        });
     }
 }
