@@ -42,7 +42,11 @@
                 {{ category | json_encode() }}
             </div>
             <div class="col-xs-12 m-b-3">
-                <img src="/documents/{{ category.details[0].imagePath }}" class="img-fluid">
+                {% if category.details[0].imagePath != "" %}
+                    <img src="/documents/{{ category.details[0].imagePath }}" class="img-fluid">
+                {% else %}
+                    &nbsp;
+                {% endif %}
             </div>
 
             <div class="col-xs-12">
